@@ -48,3 +48,6 @@ Thumbs.db
 out
 
 .angular
+
+# Environment files
+/apps/esg-assistant-server/.env
