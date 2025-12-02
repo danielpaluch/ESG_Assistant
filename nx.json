@@ -56,6 +56,21 @@
         "watchDepsTargetName": "watch-deps",
         "serveStaticTargetName": "serve-static"
       }
+    },
+    {
+      "plugin": "@nx/js/typescript",
+      "include": [
+        "libs/esg-assistant-server/company/contract/*",
+        "libs/esg-assistant-server/company/api/*",
+        "libs/esg-assistant-server/company/application/*",
+        "libs/esg-assistant-server/company/infrastructure/*",
+        "libs/esg-assistant-server/company/domain/*"
+      ],
+      "options": {
+        "typecheck": {
+          "targetName": "typecheck"
+        }
+      }
     }
   ],
   "targetDefaults": {

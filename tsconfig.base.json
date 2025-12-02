@@ -1,21 +1,34 @@
 {
   "compilerOptions": {
-    "composite": true,
-    "declarationMap": true,
-    "declaration": true,
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
     "importHelpers": true,
-    "isolatedModules": true,
-    "lib": ["es2022", "dom"],
-    "module": "nodenext",
-    "moduleResolution": "nodenext",
-    "noEmitOnError": true,
-    "noFallthroughCasesInSwitch": true,
-    "noImplicitOverride": true,
-    "noImplicitReturns": true,
-    "noUnusedLocals": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
     "skipLibCheck": true,
-    "strict": true,
-    "target": "es2022",
-    "customConditions": ["@esg-assistant/source"]
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@esg-assistant-server/company/api": [
+        "libs/esg-assistant-server/company/api/src/index.ts"
+      ],
+      "@esg-assistant-server/company/domain": [
+        "libs/esg-assistant-server/company/domain/src/index.ts"
+      ],
+      "@esg-assistant-server/company/infrastructure": [
+        "libs/esg-assistant-server/company/infrastructure/src/index.ts"
+      ],
+      "@esg-assistant-server/company/application": [
+        "libs/esg-assistant-server/company/application/src/index.ts"
+      ],
+      "@esg-assistant-server/company/contract": [
+        "libs/esg-assistant-server/company/contract/src/index.ts"
+      ]
+    }
   }
 }

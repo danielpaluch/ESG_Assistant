@@ -53,7 +53,9 @@
     "webpack-cli": "^5.1.4"
   },
   "workspaces": [
-    "packages/*"
+    "packages/*",
+    "apps/*",
+    "libs/esg-assistant-server/*"
   ],
   "dependencies": {
     "@angular/common": "~20.3.0",
