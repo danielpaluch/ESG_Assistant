@@ -16,8 +16,8 @@
     "name": "api",
     "tags": [
       "scope:company",
-      "type:contract",
-      "platform:shared"
+      "type:api",
+      "platform:server"
     ]
   },
   "dependencies": {}
