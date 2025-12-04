@@ -1,7 +1,8 @@
-import { Body, Controller, Get, Param, Post } from '@nestjs/common';
+import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
 import { CompanyResponseDto } from '@esg-assistant-server/company/contract';
 import { CompanyApplicationService } from '@esg-assistant-server/company/application';
 import { CreateCompanyHttpRequestDto } from '../dtos/company.dto';
+import { PaginatedResponse } from '@esg-assistant/shared-server/pagination';
 
 @Controller('company')
 export class CompanyController {
@@ -24,7 +25,10 @@ export class CompanyController {
   }
 
   @Get()
-  async getAllCompanies(): Promise<CompanyResponseDto[] | null> {
-    return this.companyApplicationService.getAllCompanies();
+  async getAllCompanies(
+    @Query('page') page = 1,
+    @Query('per_page') per_page = 10
+  ): Promise<PaginatedResponse<CompanyResponseDto>> {
+    return this.companyApplicationService.getAllCompanies(page, per_page);
   }
 }

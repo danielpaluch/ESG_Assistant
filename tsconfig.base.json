@@ -28,6 +28,9 @@
       ],
       "@esg-assistant-server/company/contract": [
         "libs/esg-assistant-server/company/contract/src/index.ts"
+      ],
+      "@esg-assistant/shared-server/pagination": [
+        "libs/shared-server/pagination/src/index.ts"
       ]
     }
   }

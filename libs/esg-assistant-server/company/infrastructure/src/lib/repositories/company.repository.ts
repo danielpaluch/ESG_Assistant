@@ -37,16 +37,27 @@ export class CompanyMongooseRepository implements CompanyRepositoryPort {
     });
   }
 
-  async findAll(): Promise<Company[]> {
-    const docs = await this.companyModel.find().exec();
-    return docs.map((doc) =>
+  async findAll(
+    page: number,
+    per_page: number
+  ): Promise<{ items: Company[]; results: number }> {
+    const skip = (page - 1) * per_page;
+
+    const [docs, results] = await Promise.all([
+      this.companyModel.find().skip(skip).limit(per_page).exec(),
+      this.companyModel.countDocuments().exec(),
+    ]);
+
+    const items = docs.map((doc) =>
       Company.create({
         id: doc._id.toString(),
         name: doc.name,
-        description: doc.description,
         address: doc.address,
+        description: doc.description,
         nip: doc.nip,
       })
     );
+
+    return { items, results };
   }
 }

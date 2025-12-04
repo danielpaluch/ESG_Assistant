@@ -23,6 +23,9 @@
     },
     {
       "path": "./libs/esg-assistant-server/company/domain"
+    },
+    {
+      "path": "./libs/shared-server/pagination"
     }
   ]
 }

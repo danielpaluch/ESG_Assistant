@@ -12,8 +12,11 @@ export class GetCompanyUseCase {
     private readonly companyRepository: CompanyRepositoryPort
   ) {}
 
-  async getCompanies(): Promise<Company[]> {
-    return this.companyRepository.findAll();
+  async getCompanies(
+    page: number,
+    per_page: number
+  ): Promise<{ items: Company[]; results: number }> {
+    return this.companyRepository.findAll(page, per_page);
   }
 
   async getCompanyById(id: string): Promise<Company | null> {

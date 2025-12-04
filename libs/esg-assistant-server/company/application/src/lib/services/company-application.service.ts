@@ -1,3 +1,4 @@
+import { PaginatedResponse } from '@esg-assistant/shared-server/pagination';
 import { GetCompanyUseCase } from './../use-cases/get-company.use-case';
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreateCompanyUseCase } from '../use-cases/create-company.use-case';
@@ -22,10 +23,21 @@ export class CompanyApplicationService {
     return company.mapToResponse();
   }
 
-  async getAllCompanies(): Promise<CompanyResponseDto[]> {
-    const companies = await this.getCompanyUseCase.getCompanies();
+  async getAllCompanies(
+    page: number,
+    per_page: number
+  ): Promise<PaginatedResponse<CompanyResponseDto>> {
+    const { items, results } = await this.getCompanyUseCase.getCompanies(
+      page,
+      per_page
+    );
 
-    return companies.map((company) => company.mapToResponse());
+    return {
+      items: items.map((company) => company.mapToResponse()),
+      results: results,
+      page: page,
+      per_page: per_page,
+    };
   }
 
   async getCompanyById(id: string): Promise<CompanyResponseDto | null> {

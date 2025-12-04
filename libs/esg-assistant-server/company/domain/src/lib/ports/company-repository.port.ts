@@ -7,7 +7,10 @@ export interface CompanyRepositoryPort {
 
   findById(id: string): Promise<Company | null>;
 
-  findAll(): Promise<Company[]>;
+  findAll(
+    page: number,
+    per_page: number
+  ): Promise<{ items: Company[]; results: number }>;
 
   //   getOwnerById(id: string): Promise<void>; // implement User class
 }

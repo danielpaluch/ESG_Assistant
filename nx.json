@@ -27,7 +27,8 @@
           "buildDepsName": "build-deps",
           "watchDepsName": "watch-deps"
         }
-      }
+      },
+      "exclude": ["libs/shared-server/pagination/*"]
     },
     {
       "plugin": "@nx/next/plugin",
@@ -64,7 +65,8 @@
         "libs/esg-assistant-server/company/api/*",
         "libs/esg-assistant-server/company/application/*",
         "libs/esg-assistant-server/company/infrastructure/*",
-        "libs/esg-assistant-server/company/domain/*"
+        "libs/esg-assistant-server/company/domain/*",
+        "libs/shared-server/pagination/*"
       ],
       "options": {
         "typecheck": {
