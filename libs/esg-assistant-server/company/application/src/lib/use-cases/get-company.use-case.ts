@@ -15,4 +15,8 @@ export class GetCompanyUseCase {
   async getCompanies(): Promise<Company[]> {
     return this.companyRepository.findAll();
   }
+
+  async getCompanyById(id: string): Promise<Company | null> {
+    return this.companyRepository.findById(id);
+  }
 }

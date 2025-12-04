@@ -25,7 +25,7 @@ export class CompanyMongooseRepository implements CompanyRepositoryPort {
   }
 
   async findById(id: string): Promise<Company | null> {
-    const doc = await this.companyModel.findOne({ id }).exec();
+    const doc = await this.companyModel.findOne({ _id: id }).exec();
     if (!doc) return null;
 
     return Company.create({

@@ -1,5 +1,5 @@
 import { GetCompanyUseCase } from './../use-cases/get-company.use-case';
-import { Injectable } from '@nestjs/common';
+import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreateCompanyUseCase } from '../use-cases/create-company.use-case';
 import {
   CreateCompanyRequestDto,
@@ -26,5 +26,15 @@ export class CompanyApplicationService {
     const companies = await this.getCompanyUseCase.getCompanies();
 
     return companies.map((company) => company.mapToResponse());
+  }
+
+  async getCompanyById(id: string): Promise<CompanyResponseDto | null> {
+    const company: Company | null = await this.getCompanyUseCase.getCompanyById(
+      id
+    );
+
+    if (!company) throw new NotFoundException('Company not found');
+
+    return company.mapToResponse();
   }
 }
