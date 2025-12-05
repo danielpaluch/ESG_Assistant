@@ -8,6 +8,24 @@
     },
     {
       "path": "./apps/esg-assistant-web"
+    },
+    {
+      "path": "./libs/esg-assistant-server/company/contract"
+    },
+    {
+      "path": "./libs/esg-assistant-server/company/api"
+    },
+    {
+      "path": "./libs/esg-assistant-server/company/application"
+    },
+    {
+      "path": "./libs/esg-assistant-server/company/infrastructure"
+    },
+    {
+      "path": "./libs/esg-assistant-server/company/domain"
+    },
+    {
+      "path": "./libs/shared-server/pagination"
     }
   ]
 }
