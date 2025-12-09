@@ -26,6 +26,9 @@
     },
     {
       "path": "./libs/shared-server/pagination"
+    },
+    {
+      "path": "./libs/shared-server/auth0"
     }
   ]
 }

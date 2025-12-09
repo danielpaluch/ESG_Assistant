@@ -31,6 +31,15 @@
       ],
       "@esg-assistant/shared-server/pagination": [
         "libs/shared-server/pagination/src/index.ts"
+      ],
+      "@esg-assistant/shared-server/auth0": [
+        "libs/shared-server/auth0/src/index.ts"
+      ],
+      "@esg-assistant-server/auth/api": [
+        "libs/esg-assistant-server/auth/api/src/index.ts"
+      ],
+      "@esg-assistant-server/auth/domain": [
+        "libs/esg-assistant-server/auth/domain/src/index.ts"
       ]
     }
   }
