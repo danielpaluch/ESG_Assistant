@@ -3,6 +3,8 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { Auth0AuthenticationClient } from '@esg-assistant/shared-server/auth0';
 import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
+import { JwtAuthStrategy } from './jwt/jwt-auth.strategy';
+import { JwtAuthGuard } from './jwt/jwt-auth.guard';
 
 @Module({
   imports: [ConfigModule.forRoot({ isGlobal: true })],
@@ -23,6 +25,8 @@ import { AuthController } from './auth.controller';
       inject: [ConfigService],
     },
     AuthService,
+    JwtAuthStrategy,
+    JwtAuthGuard,
   ],
   controllers: [AuthController],
   exports: [AuthService],

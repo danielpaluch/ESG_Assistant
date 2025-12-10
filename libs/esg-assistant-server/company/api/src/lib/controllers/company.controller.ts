@@ -1,9 +1,19 @@
-import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
+import {
+  Body,
+  Controller,
+  Get,
+  Param,
+  Post,
+  Query,
+  UseGuards,
+} from '@nestjs/common';
 import { CompanyResponseDto } from '@esg-assistant-server/company/contract';
 import { CompanyApplicationService } from '@esg-assistant-server/company/application';
 import { CreateCompanyHttpRequestDto } from '../dtos/company.dto';
 import { PaginatedResponse } from '@esg-assistant/shared-server/pagination';
+import { CurrentUser, JwtAuthGuard } from '@esg-assistant-server/auth/api';
 
+@UseGuards(JwtAuthGuard)
 @Controller('company')
 export class CompanyController {
   constructor(
@@ -12,7 +22,8 @@ export class CompanyController {
 
   @Post()
   async createCompany(
-    @Body() body: CreateCompanyHttpRequestDto
+    @Body() body: CreateCompanyHttpRequestDto,
+    @CurrentUser() currentUser: { sub: string }
   ): Promise<CompanyResponseDto> {
     return this.companyApplicationService.createCompany(body);
   }
