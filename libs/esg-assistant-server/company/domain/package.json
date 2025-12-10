@@ -1,5 +1,5 @@
 {
-  "name": "@esg-assistant-server/company-domain",
+  "name": "company-domain",
   "version": "0.0.1",
   "private": true,
   "type": "module",
