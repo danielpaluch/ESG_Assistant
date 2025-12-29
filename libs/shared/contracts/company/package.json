@@ -1,8 +1,7 @@
 {
-  "name": "company-contract",
+  "name": "shared-contracts-company",
   "version": "0.0.1",
   "private": true,
-  "type": "module",
   "main": "./src/index.ts",
   "types": "./src/index.ts",
   "exports": {
@@ -14,11 +13,11 @@
     "./package.json": "./package.json"
   },
   "nx": {
-    "name": "contract",
+    "name": "shared-contracts-company",
     "tags": [
       "scope:company",
-      "type:contract",
-      "platform:shared"
+      "type:contracts",
+      "platform:any"
     ]
   },
   "dependencies": {}

@@ -1,4 +1,4 @@
-import { CompanyResponseDto } from '@esg-assistant-server/company/contract';
+import { GetCompanyDetailsResponse } from '@shared/contracts/company';
 
 export interface ICompanyProps {
   id?: string;
@@ -26,7 +26,7 @@ export class Company {
     return this.props.name;
   }
 
-  mapToResponse(): CompanyResponseDto {
+  mapToResponse(): GetCompanyDetailsResponse {
     return {
       id: this.props.id,
       name: this.props.name,

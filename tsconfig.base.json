@@ -26,9 +26,6 @@
       "@esg-assistant-server/company/application": [
         "libs/esg-assistant-server/company/application/src/index.ts"
       ],
-      "@esg-assistant-server/company/contract": [
-        "libs/esg-assistant-server/company/contract/src/index.ts"
-      ],
       "@esg-assistant/shared-server/pagination": [
         "libs/shared-server/pagination/src/index.ts"
       ],
@@ -40,6 +37,9 @@
       ],
       "@esg-assistant-server/auth/domain": [
         "libs/esg-assistant-server/auth/domain/src/index.ts"
+      ],
+      "@shared/contracts/company": [
+        "libs/shared/contracts/company/src/index.ts"
       ]
     }
   }

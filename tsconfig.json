@@ -29,6 +29,9 @@
     },
     {
       "path": "./libs/shared-server/auth0"
+    },
+    {
+      "path": "./libs/shared/contracts/company"
     }
   ]
 }

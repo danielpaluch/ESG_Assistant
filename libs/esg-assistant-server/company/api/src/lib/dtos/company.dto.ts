@@ -1,4 +1,3 @@
-import { CreateCompanyRequestDto } from '@esg-assistant-server/company/contract';
 import {
   IsNotEmpty,
   IsOptional,
@@ -6,8 +5,9 @@ import {
   Matches,
   MinLength,
 } from 'class-validator';
+import { CreateCompanyPayload } from '@shared/contracts/company';
 
-export class CreateCompanyHttpRequestDto implements CreateCompanyRequestDto {
+export class CreateCompanyHttpRequestDto implements CreateCompanyPayload {
   @IsString()
   @MinLength(3, { message: 'Name must be at least 3 characters long' })
   name: string;

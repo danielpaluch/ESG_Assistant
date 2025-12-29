@@ -4,7 +4,7 @@ import {
   CompanyRepositoryPort,
 } from '@esg-assistant-server/company/domain';
 import { Company } from '@esg-assistant-server/company/domain';
-import { CreateCompanyRequestDto } from '@esg-assistant-server/company/contract';
+import { CreateCompanyPayload } from '@shared/contracts/company';
 
 @Injectable()
 export class CreateCompanyUseCase {
@@ -13,14 +13,14 @@ export class CreateCompanyUseCase {
     private readonly companyRepository: CompanyRepositoryPort
   ) {}
 
-  async execute(request: CreateCompanyRequestDto): Promise<Company> {
+  async execute(payload: CreateCompanyPayload): Promise<Company> {
+    const { name, description, address, nip } = payload;
     const company = Company.create({
-      name: request.name,
-      description: request.description,
-      address: request.address,
-      nip: request.nip,
+      name,
+      description,
+      address,
+      nip,
     });
-
     return this.companyRepository.save(company);
   }
 }
