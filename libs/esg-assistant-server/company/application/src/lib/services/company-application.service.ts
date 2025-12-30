@@ -16,9 +16,13 @@ export class CompanyApplicationService {
   ) {}
 
   async createCompany(
-    payload: CreateCompanyPayload
+    payload: CreateCompanyPayload,
+    owner_id: string
   ): Promise<GetCompanyDetailsResponse> {
-    const company: Company = await this.createCompanyUseCase.execute(payload);
+    const company: Company = await this.createCompanyUseCase.execute(
+      payload,
+      owner_id
+    );
 
     return company.mapToResponse();
   }

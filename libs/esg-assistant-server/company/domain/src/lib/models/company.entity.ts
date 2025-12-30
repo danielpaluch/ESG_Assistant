@@ -1,21 +1,23 @@
-import { GetCompanyDetailsResponse } from '@shared/contracts/company';
+import {
+  CompanyDto,
+  GetCompanyDetailsResponse,
+} from '@shared/contracts/company';
 
-export interface ICompanyProps {
-  id?: string;
-  name: string;
-  description?: string;
-  address: string;
-  nip: string;
-}
+export type ICompanyProps = Omit<CompanyDto, 'id'>;
 
 export class Company {
-  private constructor(private readonly props: ICompanyProps) {}
+  private constructor(private readonly props: CompanyDto) {}
 
-  static create(props: ICompanyProps): Company {
-    if (!props.name?.trim()) {
-      throw new Error('Name is required');
+  //use-cases
+  static create(props: ICompanyProps): Company;
+  //Repository create
+  static create(props: CompanyDto): Company;
+
+  static create(props: ICompanyProps | CompanyDto): Company {
+    if ('id' in props) {
+      return new Company(props);
     }
-    return new Company(props);
+    return new Company({ ...props, id: undefined });
   }
 
   get id(): string {
@@ -30,6 +32,7 @@ export class Company {
     return {
       id: this.props.id,
       name: this.props.name,
+      owner_id: this.props.owner_id,
       description: this.props.description,
       address: this.props.address,
       nip: this.props.nip,
@@ -40,6 +43,7 @@ export class Company {
     return {
       name: this.props.name,
       description: this.props.description,
+      owner_id: this.props.owner_id,
       address: this.props.address,
       nip: this.props.nip,
     };
