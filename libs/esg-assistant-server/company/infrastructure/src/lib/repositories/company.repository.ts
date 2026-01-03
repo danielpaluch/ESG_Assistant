@@ -19,6 +19,7 @@ export class CompanyMongooseRepository implements CompanyRepositoryPort {
       id: doc._id.toString(),
       name: doc.name,
       description: doc.description,
+      owner_id: doc.owner_id,
       address: doc.address,
       nip: doc.nip,
     });
@@ -32,6 +33,7 @@ export class CompanyMongooseRepository implements CompanyRepositoryPort {
       id: doc._id.toString(),
       name: doc.name,
       description: doc.description,
+      owner_id: doc.owner_id,
       address: doc.address,
       nip: doc.nip,
     });
@@ -53,6 +55,7 @@ export class CompanyMongooseRepository implements CompanyRepositoryPort {
         id: doc._id.toString(),
         name: doc.name,
         address: doc.address,
+        owner_id: doc.owner_id,
         description: doc.description,
         nip: doc.nip,
       })

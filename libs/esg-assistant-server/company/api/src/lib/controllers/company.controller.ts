@@ -25,7 +25,7 @@ export class CompanyController {
     @Body() body: CreateCompanyHttpRequestDto,
     @CurrentUser() currentUser: { sub: string }
   ): Promise<GetCompanyDetailsResponse> {
-    return this.companyApplicationService.createCompany(body);
+    return this.companyApplicationService.createCompany(body, currentUser.sub);
   }
 
   @Get(':id')
