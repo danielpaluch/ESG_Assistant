@@ -3,7 +3,10 @@ import { GetCompanyUseCase } from './../use-cases/get-company.use-case';
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { CreateCompanyUseCase } from '../use-cases/create-company.use-case';
 import { Company } from '@esg-assistant-server/company/domain';
-import { CreateCompanyPayload, GetCompanyDetailsResponse } from 'shared/contracts/company';
+import {
+  CreateCompanyPayload,
+  GetCompanyDetailsResponse,
+} from '@shared/contracts/company';
 
 @Injectable()
 export class CompanyApplicationService {
@@ -13,9 +16,13 @@ export class CompanyApplicationService {
   ) {}
 
   async createCompany(
-    payload: CreateCompanyPayload
-  ): Promise< GetCompanyDetailsResponse> {
-    const company: Company = await this.createCompanyUseCase.execute(payload);
+    payload: CreateCompanyPayload,
+    owner_id: string
+  ): Promise<GetCompanyDetailsResponse> {
+    const company: Company = await this.createCompanyUseCase.execute(
+      payload,
+      owner_id
+    );
 
     return company.mapToResponse();
   }

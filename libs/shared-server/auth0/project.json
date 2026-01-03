@@ -1,0 +1,9 @@
+{
+  "name": "shared-server-auth0",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared-server/auth0/src",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:auth0", "platform:server"],
+  "// targets": "to see all targets run: nx show project auth0 --web",
+  "targets": {}
+}

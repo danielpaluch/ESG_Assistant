@@ -28,7 +28,12 @@
           "watchDepsName": "watch-deps"
         }
       },
-      "exclude": ["libs/shared-server/pagination/*"]
+      "exclude": [
+        "libs/shared-server/pagination/*",
+        "libs/shared-server/auth0/*",
+        "libs/esg-assistant-server/auth/api/*",
+        "libs/esg-assistant-server/auth/domain/*"
+      ]
     },
     {
       "plugin": "@nx/next/plugin",
@@ -66,7 +71,10 @@
         "libs/esg-assistant-server/company/application/*",
         "libs/esg-assistant-server/company/infrastructure/*",
         "libs/esg-assistant-server/company/domain/*",
-        "libs/shared-server/pagination/*"
+        "libs/shared-server/pagination/*",
+        "libs/shared-server/auth0/*",
+        "libs/esg-assistant-server/auth/api/*",
+        "libs/esg-assistant-server/auth/domain/*"
       ],
       "options": {
         "typecheck": {
