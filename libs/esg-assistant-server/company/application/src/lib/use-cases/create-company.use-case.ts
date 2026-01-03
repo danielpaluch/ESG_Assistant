@@ -4,7 +4,7 @@ import {
   CompanyRepositoryPort,
 } from '@esg-assistant-server/company/domain';
 import { Company } from '@esg-assistant-server/company/domain';
-import { CreateCompanyPayload } from 'shared/contracts/company';
+import { CreateCompanyPayload } from '@shared/contracts/company';
 
 @Injectable()
 export class CreateCompanyUseCase {

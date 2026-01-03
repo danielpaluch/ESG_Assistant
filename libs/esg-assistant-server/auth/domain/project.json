@@ -1,0 +1,9 @@
+{
+  "name": "auth-domain",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/esg-assistant-server/auth/domain/src",
+  "projectType": "library",
+  "tags": ["scope:auth", "type:domain", "platform:server"],
+  "// targets": "to see all targets run: nx show project esg-assistant-server/auth/domain --web",
+  "targets": {}
+}

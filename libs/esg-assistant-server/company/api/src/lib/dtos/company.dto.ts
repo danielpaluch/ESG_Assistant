@@ -5,7 +5,7 @@ import {
   Matches,
   MinLength,
 } from 'class-validator';
-import { CreateCompanyPayload } from 'shared/contracts/company';
+import { CreateCompanyPayload } from '@shared/contracts/company';
 
 export class CreateCompanyHttpRequestDto implements CreateCompanyPayload {
   @IsString()

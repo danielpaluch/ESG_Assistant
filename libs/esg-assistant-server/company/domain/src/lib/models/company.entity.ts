@@ -1,4 +1,4 @@
-import { GetCompanyDetailsResponse } from 'shared/contracts/company';
+import { GetCompanyDetailsResponse } from '@shared/contracts/company';
 
 export interface ICompanyProps {
   id?: string;

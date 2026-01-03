@@ -1,0 +1,9 @@
+{
+  "name": "auth-api",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/esg-assistant-server/auth/api/src",
+  "projectType": "library",
+  "tags": ["scope:auth", "type:api", "platform:server"],
+  "// targets": "to see all targets run: nx show project api --web",
+  "targets": {}
+}
