@@ -40,6 +40,19 @@
       ],
       "@shared/contracts/company": [
         "libs/shared/contracts/company/src/index.ts"
+      ],
+      "@shared/contracts/users": ["libs/shared/contracts/users/src/index.ts"],
+      "@esg-assistant-server/users/api": [
+        "libs/esg-assistant-server/users/api/src/index.ts"
+      ],
+      "@esg-assistant-server/users/application": [
+        "libs/esg-assistant-server/users/application/src/index.ts"
+      ],
+      "@esg-assistant-server/users/domain": [
+        "libs/esg-assistant-server/users/domain/src/index.ts"
+      ],
+      "@esg-assistant-server/users/infrastructure": [
+        "libs/esg-assistant-server/users/infrastructure/src/index.ts"
       ]
     }
   }

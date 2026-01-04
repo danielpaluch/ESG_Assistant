@@ -32,7 +32,13 @@
         "libs/shared-server/pagination/*",
         "libs/shared-server/auth0/*",
         "libs/esg-assistant-server/auth/api/*",
-        "libs/esg-assistant-server/auth/domain/*"
+        "libs/esg-assistant-server/auth/domain/*",
+        "libs/shared/contracts/users/*",
+        "libs/esg-assistant-server/users/*",
+        "libs/esg-assistant-server/users/api/*",
+        "libs/esg-assistant-server/users/application/*",
+        "libs/esg-assistant-server/users/domain/*",
+        "libs/esg-assistant-server/users/infrastructure/*"
       ]
     },
     {
@@ -74,7 +80,13 @@
         "libs/shared-server/pagination/*",
         "libs/shared-server/auth0/*",
         "libs/esg-assistant-server/auth/api/*",
-        "libs/esg-assistant-server/auth/domain/*"
+        "libs/esg-assistant-server/auth/domain/*",
+        "libs/shared/contracts/users/*",
+        "libs/esg-assistant-server/users/*",
+        "libs/esg-assistant-server/users/api/*",
+        "libs/esg-assistant-server/users/application/*",
+        "libs/esg-assistant-server/users/domain/*",
+        "libs/esg-assistant-server/users/infrastructure/*"
       ],
       "options": {
         "typecheck": {
