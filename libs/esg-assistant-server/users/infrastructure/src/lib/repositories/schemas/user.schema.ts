@@ -4,7 +4,7 @@ import { Schema, Document } from 'mongoose';
 
 export type UserDocument = Omit<UserDto, 'id'> & Document;
 
-export const CompanySchema = new Schema<UserDocument>({
+export const UserSchema = new Schema<UserDocument>({
   name: { type: String, required: true },
   last_name: { type: String, required: true },
   email: { type: String, required: true },

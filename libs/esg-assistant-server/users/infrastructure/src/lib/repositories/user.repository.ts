@@ -5,7 +5,7 @@ import { User, UserRepositoryPort } from '@esg-assistant-server/users/domain';
 
 export class UserMongooseRepository implements UserRepositoryPort {
   constructor(
-    @InjectModel('Users')
+    @InjectModel('User')
     private readonly usersModel: Model<UserDocument>,
   ) {}
   async save(user: User): Promise<User> {

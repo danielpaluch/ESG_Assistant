@@ -53,7 +53,12 @@
       ],
       "@esg-assistant-server/users/infrastructure": [
         "libs/esg-assistant-server/users/infrastructure/src/index.ts"
-      ]
+      ],
+      "@shared/contracts/auth0": ["libs/shared/contracts/auth0/src/index.ts"],
+      "@esg-assistant/authentication": [
+        "libs/shared/contracts/authentication/src/index.ts"
+      ],
+      "@shared-server/jwt": ["libs/shared-server/jwt/src/index.ts"]
     }
   }
 }

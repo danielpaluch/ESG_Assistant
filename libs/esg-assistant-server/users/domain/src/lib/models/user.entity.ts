@@ -3,8 +3,16 @@ import { UserDetails, UserDto, UserPrimitives } from '@shared/contracts/users';
 export class User {
   private constructor(private readonly props: UserDto) {}
 
-  static create(props: UserDto): User {
-    return new User({ ...props });
+  //use-cases
+  static create(props: UserPrimitives): User;
+  //Repository create
+  static create(props: UserDto): User;
+
+  static create(props: UserPrimitives | UserDto): User {
+    if ('id' in props) {
+      return new User(props);
+    }
+    return new User({ ...props, id: '' });
   }
 
   mapToResponse(): UserDetails {

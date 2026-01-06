@@ -23,24 +23,3 @@ export interface Auth0TokenResponse {
   expires_in: number;
   token_type: string;
 }
-
-export interface Auth0User {
-  user_id: string;
-  email: string;
-  email_verified: boolean;
-  name?: string;
-  nickname?: string;
-  picture?: string;
-  app_metadata?: Record<string, unknown>;
-  user_metadata?: Record<string, unknown>;
-}
-
-export interface CreateAuth0UserPayload {
-  email: string;
-  password: string;
-  connection: string;
-  email_verified?: boolean;
-  verify_email?: boolean;
-  app_metadata?: Record<string, unknown>;
-  user_metadata?: Record<string, unknown>;
-}

@@ -38,7 +38,10 @@
         "libs/esg-assistant-server/users/api/*",
         "libs/esg-assistant-server/users/application/*",
         "libs/esg-assistant-server/users/domain/*",
-        "libs/esg-assistant-server/users/infrastructure/*"
+        "libs/esg-assistant-server/users/infrastructure/*",
+        "libs/shared/contracts/auth0/*",
+        "libs/shared/contracts/authentication/*",
+        "libs/shared-server/jwt/*"
       ]
     },
     {
@@ -86,7 +89,10 @@
         "libs/esg-assistant-server/users/api/*",
         "libs/esg-assistant-server/users/application/*",
         "libs/esg-assistant-server/users/domain/*",
-        "libs/esg-assistant-server/users/infrastructure/*"
+        "libs/esg-assistant-server/users/infrastructure/*",
+        "libs/shared/contracts/auth0/*",
+        "libs/shared/contracts/authentication/*",
+        "libs/shared-server/jwt/*"
       ],
       "options": {
         "typecheck": {
