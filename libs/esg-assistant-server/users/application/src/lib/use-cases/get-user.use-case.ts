@@ -22,4 +22,8 @@ export class GetUserUseCase {
   async getUserById(id: string): Promise<User | null> {
     return this.userRepository.findById(id);
   }
+
+  async getUserByAuth0Id(id: string): Promise<User | null> {
+    return this.userRepository.findByAuth0Id(id);
+  }
 }

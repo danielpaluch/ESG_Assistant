@@ -11,4 +11,6 @@ export interface UserRepositoryPort {
     page: number,
     per_page: number,
   ): Promise<{ items: User[]; results: number }>;
+
+  findByAuth0Id(id: string): Promise<User | null>;
 }

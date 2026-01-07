@@ -8,6 +8,7 @@ export class UserMongooseRepository implements UserRepositoryPort {
     @InjectModel('User')
     private readonly usersModel: Model<UserDocument>,
   ) {}
+
   async save(user: User): Promise<User> {
     const doc = await this.usersModel.create(user.toPrimitives());
 
@@ -64,5 +65,22 @@ export class UserMongooseRepository implements UserRepositoryPort {
     );
 
     return { items, results };
+  }
+
+  async findByAuth0Id(id: string): Promise<User | null> {
+    const doc = await this.usersModel.findOne({ auth0_userId: id }).exec();
+
+    if (!doc) return null;
+
+    return User.create({
+      id: doc._id.toString(),
+      name: doc.name,
+      last_name: doc.last_name,
+      email: doc.email,
+      address: doc.address,
+      birth_date: doc.birth_date,
+      auth0_userId: doc.auth0_userId,
+      creation_date: doc.creation_date,
+    });
   }
 }

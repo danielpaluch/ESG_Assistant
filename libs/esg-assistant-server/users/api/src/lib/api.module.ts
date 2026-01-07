@@ -28,6 +28,6 @@ import { JwtModule } from '@shared-server/jwt';
       useClass: UserMongooseRepository,
     },
   ],
-  exports: [UserService, CreateUserUseCase],
+  exports: [UserService, CreateUserUseCase, GetUserUseCase],
 })
 export class UserModule {}

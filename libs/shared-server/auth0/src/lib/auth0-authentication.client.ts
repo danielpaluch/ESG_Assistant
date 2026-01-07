@@ -48,9 +48,14 @@ export class Auth0AuthenticationClient {
       password,
       client_id: this.config.clientId,
       client_secret: this.config.clientSecret,
+      scope: 'openid profile email',
     });
 
-    return data;
+    const userInfo = await this.http.get<{ sub: string }>('/userinfo', {
+      headers: { Authorization: `Bearer ${data.access_token}` },
+    });
+
+    return { ...data, sub: userInfo.data.sub };
   }
 
   async createUser(payload: CreateAuth0UserPayload): Promise<Auth0User> {
