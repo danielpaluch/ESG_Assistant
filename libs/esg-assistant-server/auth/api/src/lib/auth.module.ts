@@ -3,11 +3,11 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { Auth0AuthenticationClient } from '@esg-assistant/shared-server/auth0';
 import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
-import { JwtAuthStrategy } from './jwt/jwt-auth.strategy';
-import { JwtAuthGuard } from './jwt/jwt-auth.guard';
+import { UserModule } from '@esg-assistant-server/users/api';
+import { JwtModule } from '@shared-server/jwt';
 
 @Module({
-  imports: [ConfigModule.forRoot({ isGlobal: true })],
+  imports: [ConfigModule.forRoot({ isGlobal: true }), UserModule, JwtModule],
   providers: [
     {
       provide: Auth0AuthenticationClient,
@@ -19,14 +19,12 @@ import { JwtAuthGuard } from './jwt/jwt-auth.guard';
           mgmt_audience: config.getOrThrow<string>('AUTH0_AUTH_MGMT_AUDIENCE'),
           mgmt_clientId: config.getOrThrow<string>('AUTH0_AUTH_MGMT_ID'),
           mgmt_clientSecret: config.getOrThrow<string>(
-            'AUTH0_AUTH_MGMT_SECRET'
+            'AUTH0_AUTH_MGMT_SECRET',
           ),
         }),
       inject: [ConfigService],
     },
     AuthService,
-    JwtAuthStrategy,
-    JwtAuthGuard,
   ],
   controllers: [AuthController],
   exports: [AuthService],

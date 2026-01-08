@@ -10,9 +10,6 @@
       "path": "./apps/esg-assistant-web"
     },
     {
-      "path": "./libs/esg-assistant-server/company/contract"
-    },
-    {
       "path": "./libs/esg-assistant-server/company/api"
     },
     {

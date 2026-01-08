@@ -1,0 +1,9 @@
+{
+  "name": "users-infrastructure",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/esg-assistant-server/users/infrastructure/src",
+  "projectType": "library",
+  "tags": ["scope:users", "type:infrastructure", "platform:server"],
+  "// targets": "to see all targets run: nx show project infrastructure --web",
+  "targets": {}
+}

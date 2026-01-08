@@ -40,7 +40,25 @@
       ],
       "@shared/contracts/company": [
         "libs/shared/contracts/company/src/index.ts"
-      ]
+      ],
+      "@shared/contracts/users": ["libs/shared/contracts/users/src/index.ts"],
+      "@esg-assistant-server/users/api": [
+        "libs/esg-assistant-server/users/api/src/index.ts"
+      ],
+      "@esg-assistant-server/users/application": [
+        "libs/esg-assistant-server/users/application/src/index.ts"
+      ],
+      "@esg-assistant-server/users/domain": [
+        "libs/esg-assistant-server/users/domain/src/index.ts"
+      ],
+      "@esg-assistant-server/users/infrastructure": [
+        "libs/esg-assistant-server/users/infrastructure/src/index.ts"
+      ],
+      "@shared/contracts/auth0": ["libs/shared/contracts/auth0/src/index.ts"],
+      "@esg-assistant/authentication": [
+        "libs/shared/contracts/authentication/src/index.ts"
+      ],
+      "@shared-server/jwt": ["libs/shared-server/jwt/src/index.ts"]
     }
   }
 }

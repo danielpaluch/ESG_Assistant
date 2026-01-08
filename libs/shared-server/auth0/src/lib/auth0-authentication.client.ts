@@ -4,7 +4,7 @@ import {
   Auth0TokenResponse,
   Auth0User,
   CreateAuth0UserPayload,
-} from './auth0.types';
+} from '@shared/contracts/auth0';
 
 export class Auth0AuthenticationClient {
   private http: AxiosInstance;
@@ -27,7 +27,7 @@ export class Auth0AuthenticationClient {
             client_id: this.config.mgmt_clientId,
             client_secret: this.config.mgmt_clientSecret,
             audience: `${this.config.mgmt_audience}`,
-          }
+          },
         );
 
         return data.access_token;
@@ -39,7 +39,7 @@ export class Auth0AuthenticationClient {
 
   async loginWithPassword(
     username: string,
-    password: string
+    password: string,
   ): Promise<Auth0TokenResponse> {
     const { data } = await this.http.post<Auth0TokenResponse>('/oauth/token', {
       grant_type: 'password',
@@ -48,9 +48,14 @@ export class Auth0AuthenticationClient {
       password,
       client_id: this.config.clientId,
       client_secret: this.config.clientSecret,
+      scope: 'openid profile email',
     });
 
-    return data;
+    const userInfo = await this.http.get<{ sub: string }>('/userinfo', {
+      headers: { Authorization: `Bearer ${data.access_token}` },
+    });
+
+    return { ...data, sub: userInfo.data.sub };
   }
 
   async createUser(payload: CreateAuth0UserPayload): Promise<Auth0User> {
