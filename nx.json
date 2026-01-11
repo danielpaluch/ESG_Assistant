@@ -42,7 +42,8 @@
         "libs/shared/contracts/auth0/*",
         "libs/shared/contracts/authentication/*",
         "libs/shared-server/jwt/*",
-        "libs/esg-assistant-server/auth/application/*"
+        "libs/esg-assistant-server/auth/application/*",
+        "libs/shared/error/*"
       ]
     },
     {
@@ -94,7 +95,8 @@
         "libs/shared/contracts/auth0/*",
         "libs/shared/contracts/authentication/*",
         "libs/shared-server/jwt/*",
-        "libs/esg-assistant-server/auth/application/*"
+        "libs/esg-assistant-server/auth/application/*",
+        "libs/shared/error/*"
       ],
       "options": {
         "typecheck": {

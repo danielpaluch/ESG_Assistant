@@ -1,8 +1,9 @@
-import { Injectable, NotFoundException } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
 import { GetUserUseCase } from '../use-cases/get-user.use-case';
 import { UserDetails } from '@shared/contracts/users';
 import { PaginatedResponse } from '@esg-assistant/shared-server/pagination';
 import { User } from '@esg-assistant-server/users/domain';
+import { NotFoundException } from '@shared-server/exceptions';
 
 @Injectable()
 export class UserService {

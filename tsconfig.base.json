@@ -61,7 +61,11 @@
       "@shared-server/jwt": ["libs/shared-server/jwt/src/index.ts"],
       "@esg-assistant-server/auth/application": [
         "libs/esg-assistant-server/auth/application/src/index.ts"
-      ]
+      ],
+      "@shared-server/exceptions": [
+        "libs/shared-server/exceptions/src/index.ts"
+      ],
+      "@shared/error": ["libs/shared/error/src/index.ts"]
     }
   }
 }

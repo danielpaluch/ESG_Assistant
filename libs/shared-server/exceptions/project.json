@@ -1,0 +1,9 @@
+{
+  "name": "shared-server-exceptions",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared-server/exceptions/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project exceptions --web",
+  "targets": {}
+}
