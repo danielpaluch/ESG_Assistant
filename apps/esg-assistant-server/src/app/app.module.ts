@@ -7,6 +7,7 @@ import { CompanyModule } from '@esg-assistant-server/company/api';
 import { AuthModule } from '@esg-assistant-server/auth/api';
 import { UserModule } from '@esg-assistant-server/users/api';
 import { JwtModule } from '@shared-server/jwt';
+import { MembershipModule } from '@esg-assistant-server/membership/api';
 
 @Module({
   imports: [
@@ -16,6 +17,7 @@ import { JwtModule } from '@shared-server/jwt';
     UserModule,
     AuthModule,
     JwtModule,
+    MembershipModule,
   ],
   controllers: [AppController],
   providers: [AppService],

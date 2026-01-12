@@ -22,13 +22,67 @@
       "path": "./libs/esg-assistant-server/company/domain"
     },
     {
+      "path": "./libs/esg-assistant-server/membership/api"
+    },
+    {
+      "path": "./libs/esg-assistant-server/membership/application"
+    },
+    {
+      "path": "./libs/esg-assistant-server/membership/infrastructure"
+    },
+    {
+      "path": "./libs/esg-assistant-server/membership/domain"
+    },
+    {
+      "path": "./libs/esg-assistant-server/users/api"
+    },
+    {
+      "path": "./libs/esg-assistant-server/users/application"
+    },
+    {
+      "path": "./libs/esg-assistant-server/users/infrastructure"
+    },
+    {
+      "path": "./libs/esg-assistant-server/users/domain"
+    },
+    {
+      "path": "./libs/esg-assistant-server/auth/api"
+    },
+    {
+      "path": "./libs/esg-assistant-server/auth/application"
+    },
+    {
+      "path": "./libs/esg-assistant-server/auth/domain"
+    },
+    {
       "path": "./libs/shared-server/pagination"
     },
     {
       "path": "./libs/shared-server/auth0"
     },
     {
+      "path": "./libs/shared-server/jwt"
+    },
+    {
+      "path": "./libs/shared-server/exceptions"
+    },
+    {
       "path": "./libs/shared/contracts/company"
+    },
+    {
+      "path": "./libs/shared/contracts/users"
+    },
+    {
+      "path": "./libs/shared/contracts/auth0"
+    },
+    {
+      "path": "./libs/shared/contracts/authentication"
+    },
+    {
+      "path": "./libs/shared/contracts/membership"
+    },
+    {
+      "path": "./libs/shared/error"
     }
   ]
 }

@@ -15,7 +15,7 @@ export class UserController {
   }
 
   @Get()
-  async getAllCompanies(
+  async getAllUsers(
     @Query('page') page = 1,
     @Query('per_page') per_page = 10,
   ): Promise<PaginatedResponse<UserDetails>> {

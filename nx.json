@@ -43,7 +43,13 @@
         "libs/shared/contracts/authentication/*",
         "libs/shared-server/jwt/*",
         "libs/esg-assistant-server/auth/application/*",
-        "libs/shared/error/*"
+        "libs/shared/error/*",
+        "libs/esg-assistant-server/membership/*",
+        "libs/shared/contracts/membership/*",
+        "libs/esg-assistant-server/membership/api/*",
+        "libs/esg-assistant-server/membership/infrastructure/*",
+        "libs/esg-assistant-server/membership/domain/*",
+        "libs/esg-assistant-server/membership/application/*"
       ]
     },
     {
@@ -96,7 +102,13 @@
         "libs/shared/contracts/authentication/*",
         "libs/shared-server/jwt/*",
         "libs/esg-assistant-server/auth/application/*",
-        "libs/shared/error/*"
+        "libs/shared/error/*",
+        "libs/esg-assistant-server/membership/*",
+        "libs/shared/contracts/membership/*",
+        "libs/esg-assistant-server/membership/api/*",
+        "libs/esg-assistant-server/membership/infrastructure/*",
+        "libs/esg-assistant-server/membership/domain/*",
+        "libs/esg-assistant-server/membership/application/*"
       ],
       "options": {
         "typecheck": {
@@ -134,5 +146,8 @@
         "linter": "eslint"
       }
     }
+  },
+  "sync": {
+    "disabledTaskSyncGenerators": ["@nx/js:typescript-sync"]
   }
 }

@@ -17,7 +17,7 @@ export class Company {
     if ('id' in props) {
       return new Company(props);
     }
-    return new Company({ ...props, id: undefined });
+    return new Company({ ...props, id: '' });
   }
 
   get id(): string {
