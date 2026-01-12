@@ -7,6 +7,10 @@ import { Auth0AuthenticationClient } from '@esg-assistant/shared-server/auth0';
 import { CreateAuth0UserPayload } from '@shared/contracts/auth0';
 import { CreateUserPayload } from '@shared/contracts/users';
 import { LoginResponse, RegisterPayload } from '@esg-assistant/authentication';
+import {
+  NotFoundException,
+  ServiceUnavailableException,
+} from '@shared-server/exceptions';
 
 @Injectable()
 export class AuthService {
@@ -15,20 +19,17 @@ export class AuthService {
     @Inject(AUTH_USERS_PORT) private readonly usersPort: AuthUsersPort,
   ) {}
 
-  async login(email: string, password: string): Promise<LoginResponse | Error> {
+  async login(email: string, password: string): Promise<LoginResponse> {
     const token = await this.auth0AuthClient.loginWithPassword(email, password);
 
     if (!token)
-      return new Error(
+      throw new ServiceUnavailableException(
         'Cannot login, cannot estabilish connection with Auth0.',
       );
 
     const userDetails = await this.usersPort.getUserByAuth0Id(token.sub);
 
-    if (!userDetails)
-      return new Error(
-        'Cannot login, cannot estabilish connection with database.',
-      );
+    if (!userDetails) throw new NotFoundException();
 
     return {
       access_token: token.access_token,
@@ -48,20 +49,21 @@ export class AuthService {
 
     const auth0User = await this.auth0AuthClient.createUser(payloadAuth0);
 
-    if (auth0User) {
-      const userPayload: CreateUserPayload = {
-        email: payload.email,
-        name: payload.name,
-        last_name: payload.last_name,
-        address: payload.address,
-        birth_date: payload.birth_date,
-        auth0_userId: auth0User.user_id,
-        creation_date: new Date(),
-      };
+    if (!auth0User)
+      throw new ServiceUnavailableException(
+        'User not created, cannot establish connection with Auth0.',
+      );
 
-      return this.usersPort.createUser(userPayload);
-    }
+    const userPayload: CreateUserPayload = {
+      email: payload.email,
+      name: payload.name,
+      last_name: payload.last_name,
+      address: payload.address,
+      birth_date: payload.birth_date,
+      auth0_userId: auth0User.user_id,
+      creation_date: new Date(),
+    };
 
-    return new Error('User not created');
+    return this.usersPort.createUser(userPayload);
   }
 }
