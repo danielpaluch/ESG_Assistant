@@ -65,7 +65,20 @@
       "@shared-server/exceptions": [
         "libs/shared-server/exceptions/src/index.ts"
       ],
-      "@shared/error": ["libs/shared/error/src/index.ts"]
+      "@shared/error": ["libs/shared/error/src/index.ts"],
+      "@shared/membership": ["libs/shared/contracts/membership/src/index.ts"],
+      "@esg-assistant-server/membership/api": [
+        "libs/esg-assistant-server/membership/api/src/index.ts"
+      ],
+      "@esg-assistant-server/membership/infrastructure": [
+        "libs/esg-assistant-server/membership/infrastructure/src/index.ts"
+      ],
+      "@esg-assistant-server/membership/domain": [
+        "libs/esg-assistant-server/membership/domain/src/index.ts"
+      ],
+      "@esg-assistant-server/membership/application": [
+        "libs/esg-assistant-server/membership/application/src/index.ts"
+      ]
     }
   }
 }
