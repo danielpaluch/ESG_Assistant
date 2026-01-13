@@ -78,6 +78,21 @@
       ],
       "@esg-assistant-server/membership/application": [
         "libs/esg-assistant-server/membership/application/src/index.ts"
+      ],
+      "@esg-assistant-server/emissions/api": [
+        "libs/esg-assistant-server/emissions/api/src/index.ts"
+      ],
+      "@esg-assistant-server/emissions/application": [
+        "libs/esg-assistant-server/emissions/application/src/index.ts"
+      ],
+      "@esg-assistant-server/emissions/infrastructure": [
+        "libs/esg-assistant-server/emissions/infrastructure/src/index.ts"
+      ],
+      "@esg-assistant-server/emissions/domain": [
+        "libs/esg-assistant-server/emissions/domain/src/index.ts"
+      ],
+      "@shared/contracts/emissions": [
+        "libs/shared/contracts/emissions/src/index.ts"
       ]
     }
   }

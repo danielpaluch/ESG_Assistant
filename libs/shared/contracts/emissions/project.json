@@ -1,0 +1,9 @@
+{
+  "name": "shared-contracts-emissions",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/contracts/emissions/src",
+  "projectType": "library",
+  "tags": [],
+  "// targets": "to see all targets run: nx show project emissions --web",
+  "targets": {}
+}
