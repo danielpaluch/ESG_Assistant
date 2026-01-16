@@ -1,0 +1,109 @@
+category,fuel,unit,kg_co2e,type
+Gaseous fuels,Butane,tonnes,3033.38,fuel
+Gaseous fuels,Butane,litres,1.75,fuel
+Gaseous fuels,Butane,kWh (Net CV),0.24,fuel
+Gaseous fuels,Butane,kWh (Gross CV),0.22,fuel
+Gaseous fuels,CNG,tonnes,2562.57,fuel
+Gaseous fuels,CNG,litres,0.45,fuel
+Gaseous fuels,CNG,kWh (Net CV),0.2,fuel
+Gaseous fuels,CNG,kWh (Gross CV),0.18,fuel
+Gaseous fuels,LNG,tonnes,2581.98,fuel
+Gaseous fuels,LNG,litres,1.17,fuel
+Gaseous fuels,LNG,kWh (Net CV),0.2,fuel
+Gaseous fuels,LNG,kWh (Gross CV),0.18,fuel
+Gaseous fuels,LPG,tonnes,2939.36,fuel
+Gaseous fuels,LPG,litres,1.56,fuel
+Gaseous fuels,LPG,kWh (Net CV),0.24,fuel
+Gaseous fuels,LPG,kWh (Gross CV),0.21,fuel
+Gaseous fuels,Natural gas,tonnes,2562.57,fuel
+Gaseous fuels,Natural gas,cubic metres,2.04,fuel
+Gaseous fuels,Natural gas,kWh (Net CV),0.2,fuel
+Gaseous fuels,Natural gas,kWh (Gross CV),0.18,fuel
+Gaseous fuels,Natural gas (100% mineral blend),tonnes,2581.98,fuel
+Gaseous fuels,Natural gas (100% mineral blend),cubic metres,2.05,fuel
+Gaseous fuels,Natural gas (100% mineral blend),kWh (Net CV),0.2,fuel
+Gaseous fuels,Natural gas (100% mineral blend),kWh (Gross CV),0.18,fuel
+Gaseous fuels,Other petroleum gas,tonnes,2578.75,fuel
+Gaseous fuels,Other petroleum gas,litres,0.94,fuel
+Gaseous fuels,Other petroleum gas,kWh (Net CV),0.2,fuel
+Gaseous fuels,Other petroleum gas,kWh (Gross CV),0.18,fuel
+Gaseous fuels,Propane,tonnes,2997.63,fuel
+Gaseous fuels,Propane,litres,1.54,fuel
+Gaseous fuels,Propane,kWh (Net CV),0.24,fuel
+Gaseous fuels,Propane,kWh (Gross CV),0.21,fuel
+Liquid fuels,Aviation spirit,tonnes,3193.69,fuel
+Liquid fuels,Aviation spirit,litres,2.33,fuel
+Liquid fuels,Aviation spirit,kWh (Net CV),0.26,fuel
+Liquid fuels,Aviation spirit,kWh (Gross CV),0.24,fuel
+Liquid fuels,Aviation turbine fuel,tonnes,3178.37,fuel
+Liquid fuels,Aviation turbine fuel,litres,2.54,fuel
+Liquid fuels,Aviation turbine fuel,kWh (Net CV),0.26,fuel
+Liquid fuels,Aviation turbine fuel,kWh (Gross CV),0.25,fuel
+Liquid fuels,Burning oil,tonnes,3165.04,fuel
+Liquid fuels,Burning oil,litres,2.54,fuel
+Liquid fuels,Burning oil,kWh (Net CV),0.24,fuel
+Liquid fuels,Burning oil,kWh (Gross CV),0.25,fuel
+Liquid fuels,Diesel (average biofuel blend),tonnes,3015.65,fuel
+Liquid fuels,Diesel (average biofuel blend),litres,2.51,fuel
+Liquid fuels,Diesel (average biofuel blend),kWh (Net CV),0.24,fuel
+Liquid fuels,Diesel (average biofuel blend),kWh (Gross CV),0.24,fuel
+Liquid fuels,Diesel (100% mineral diesel),tonnes,3203.91,fuel
+Liquid fuels,Diesel (100% mineral diesel),litres,2.66,fuel
+Liquid fuels,Diesel (100% mineral diesel),kWh (Net CV),0.25,fuel
+Liquid fuels,Diesel (100% mineral diesel),kWh (Gross CV),0.25,fuel
+Liquid fuels,Fuel oil,tonnes,3228.89,fuel
+Liquid fuels,Fuel oil,litres,3.17,fuel
+Liquid fuels,Fuel oil,kWh (Net CV),0.27,fuel
+Liquid fuels,Fuel oil,kWh (Gross CV),0.27,fuel
+Liquid fuels,Gas oil,tonnes,3226.58,fuel
+Liquid fuels,Gas oil,litres,2.76,fuel
+Liquid fuels,Gas oil,kWh (Net CV),0.26,fuel
+Liquid fuels,Gas oil,kWh (Gross CV),0.26,fuel
+Liquid fuels,Lubricants,tonnes,3181.0,fuel
+Liquid fuels,Lubricants,litres,2.75,fuel
+Liquid fuels,Lubricants,kWh (Net CV),0.28,fuel
+Liquid fuels,Lubricants,kWh (Gross CV),0.26,fuel
+Liquid fuels,Naphtha,tonnes,3142.38,fuel
+Liquid fuels,Naphtha,litres,2.12,fuel
+Liquid fuels,Naphtha,kWh (Net CV),0.25,fuel
+Liquid fuels,Naphtha,kWh (Gross CV),0.24,fuel
+Liquid fuels,Petrol (average biofuel blend),tonnes,2806.66,fuel
+Liquid fuels,Petrol (average biofuel blend),litres,2.1,fuel
+Liquid fuels,Petrol (average biofuel blend),kWh (Net CV),0.22,fuel
+Liquid fuels,Petrol (average biofuel blend),kWh (Gross CV),0.22,fuel
+Liquid fuels,Petrol (100% mineral petrol),tonnes,3154.08,fuel
+Liquid fuels,Petrol (100% mineral petrol),litres,2.35,fuel
+Liquid fuels,Petrol (100% mineral petrol),kWh (Net CV),0.25,fuel
+Liquid fuels,Petrol (100% mineral petrol),kWh (Gross CV),0.24,fuel
+Liquid fuels,Processed fuel oils - residual oil,tonnes,3228.89,fuel
+Liquid fuels,Processed fuel oils - residual oil,litres,3.17,fuel
+Liquid fuels,Processed fuel oils - residual oil,kWh (Net CV),0.27,fuel
+Liquid fuels,Processed fuel oils - residual oil,kWh (Gross CV),0.27,fuel
+Liquid fuels,Processed fuel oils - distillate oil,tonnes,3226.58,fuel
+Liquid fuels,Processed fuel oils - distillate oil,litres,3.17,fuel
+Liquid fuels,Processed fuel oils - distillate oil,kWh (Net CV),0.27,fuel
+Liquid fuels,Processed fuel oils - distillate oil,kWh (Gross CV),0.27,fuel
+Liquid fuels,Refinery miscellaneous,tonnes,2944.32,fuel
+Liquid fuels,Refinery miscellaneous,litres,0.26,fuel
+Liquid fuels,Refinery miscellaneous,kWh (Net CV),0.26,fuel
+Liquid fuels,Refinery miscellaneous,kWh (Gross CV),0.26,fuel
+Liquid fuels,Waste oils,tonnes,3219.38,fuel
+Liquid fuels,Waste oils,litres,2.75,fuel
+Solid fuels,Coal (industrial),tonnes,2396.48,fuel
+Solid fuels,Coal (industrial),kWh (Net CV),0.34,fuel
+Solid fuels,Coal (industrial),kWh (Gross CV),0.32,fuel
+Solid fuels,Coal (electricity generation),tonnes,2199.3,fuel
+Solid fuels,Coal (electricity generation),kWh (Net CV),0.33,fuel
+Solid fuels,Coal (electricity generation),kWh (Gross CV),0.32,fuel
+Solid fuels,Coal (domestic),tonnes,2904.95,fuel
+Solid fuels,Coal (domestic),kWh (Net CV),0.37,fuel
+Solid fuels,Coal (domestic),kWh (Gross CV),0.35,fuel
+Solid fuels,Coking coal,tonnes,3164.65,fuel
+Solid fuels,Coking coal,kWh (Net CV),0.38,fuel
+Solid fuels,Coking coal,kWh (Gross CV),0.36,fuel
+Solid fuels,Petroleum coke,tonnes,3386.57,fuel
+Solid fuels,Petroleum coke,kWh (Net CV),0.36,fuel
+Solid fuels,Petroleum coke,kWh (Gross CV),0.34,fuel
+Solid fuels,Coal (electricity generation - home produced coal only),tonnes,2195.9,fuel
+Solid fuels,Coal (electricity generation - home produced coal only),kWh (Net CV),0.33,fuel
+Solid fuels,Coal (electricity generation - home produced coal only),kWh (Gross CV),0.32,fuel

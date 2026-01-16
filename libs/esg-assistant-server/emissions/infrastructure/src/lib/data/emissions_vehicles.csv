@@ -1,0 +1,43 @@
+vehicle_group,vehicle,unit,propulsion,kg_co2e,type
+Road vehicles - Passenger,Small car,km,Petrol,0.1408,vehicles
+Road vehicles - Passenger,Medium car,km,Petrol,0.17819,vehicles
+Road vehicles - Passenger,Large car,km,Petrol,0.27224,vehicles
+Road vehicles - Passenger,Average car,km,Petrol,0.16391,vehicles
+Road vehicles - Passenger,Average motorbike,km,Petrol,0.11367,vehicles
+Road vehicles - Cargo,Average van,km,Petrol,0.2,vehicles
+Road vehicles - Passenger,Small car,km,Diesel,0.13763,vehicles
+Road vehicles - Passenger,Medium car,km,Diesel,0.16548,vehicles
+Road vehicles - Passenger,Large car,km,Diesel,0.20691,vehicles
+Road vehicles - Passenger,Average car,km,Diesel,0.16815,vehicles
+Road vehicles - Passenger,Average motorbike,km,Diesel,,vehicles
+Road vehicles - Cargo,Average van,km,Diesel,0.2366992,vehicles
+Road vehicles - Passenger,Small car,km,Hybrid,0.1015,vehicles
+Road vehicles - Passenger,Medium car,km,Hybrid,0.10783,vehicles
+Road vehicles - Passenger,Large car,km,Hybrid,0.15104,vehicles
+Road vehicles - Passenger,Average car,km,Hybrid,0.11781,vehicles
+Road vehicles - Passenger,Average motorbike,km,Hybrid,,vehicles
+Road vehicles - Cargo,Average van,km,Hybrid,,vehicles
+Road vehicles - Passenger,Small car,km,CNG,0.1566,vehicles
+Road vehicles - Passenger,Medium car,km,CNG,0.15447,vehicles
+Road vehicles - Passenger,Large car,km,CNG,0.23632,vehicles
+Road vehicles - Passenger,Average car,km,CNG,0.17191,vehicles
+Road vehicles - Passenger,Average motorbike,km,CNG,,vehicles
+Road vehicles - Cargo,Average van,km,CNG,0.2305764,vehicles
+Road vehicles - Passenger,Small car,km,LPG,0.17607,vehicles
+Road vehicles - Passenger,Medium car,km,LPG,0.17566,vehicles
+Road vehicles - Passenger,Large car,km,LPG,0.26872,vehicles
+Road vehicles - Passenger,Average car,km,LPG,0.19662,vehicles
+Road vehicles - Passenger,Average motorbike,km,LPG,,vehicles
+Road vehicles - Cargo,Average van,km,LPG,0.2558829,vehicles
+Road vehicles - Passenger,Small car,km,Plug-in Hybrid Electric Vehicle,0.02163,vehicles
+Road vehicles - Passenger,Medium car,km,Plug-in Hybrid Electric Vehicle,0.02149,vehicles
+Road vehicles - Passenger,Large car,km,Plug-in Hybrid Electric Vehicle,0.07082,vehicles
+Road vehicles - Passenger,Average car,km,Plug-in Hybrid Electric Vehicle,0.06542,vehicles
+Road vehicles - Passenger,Average motorbike,km,Plug-in Hybrid Electric Vehicle,,vehicles
+Road vehicles - Cargo,Average van,km,Plug-in Hybrid Electric Vehicle,,vehicles
+Road vehicles - Passenger,Small car,km,Battery Electric Vehicle,0.0,vehicles
+Road vehicles - Passenger,Medium car,km,Battery Electric Vehicle,0.0,vehicles
+Road vehicles - Passenger,Large car,km,Battery Electric Vehicle,0.0,vehicles
+Road vehicles - Passenger,Average car,km,Battery Electric Vehicle,0.0,vehicles
+Road vehicles - Passenger,Average motorbike,km,Battery Electric Vehicle,0.0,vehicles
+Road vehicles - Cargo,Average van,km,Battery Electric Vehicle,0.0,vehicles

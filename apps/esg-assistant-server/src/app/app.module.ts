@@ -8,6 +8,7 @@ import { AuthModule } from '@esg-assistant-server/auth/api';
 import { UserModule } from '@esg-assistant-server/users/api';
 import { JwtModule } from '@shared-server/jwt';
 import { MembershipModule } from '@esg-assistant-server/membership/api';
+import { EmissionsModule } from '@esg-assistant-server/emissions/api';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { MembershipModule } from '@esg-assistant-server/membership/api';
     AuthModule,
     JwtModule,
     MembershipModule,
+    EmissionsModule,
   ],
   controllers: [AppController],
   providers: [AppService],
