@@ -65,26 +65,27 @@ export class EmissionMongooseRepository implements EmissionRepositoryPort {
     );
   }
 
-  // simplify the logic
   async findEmissionFactor(query: EmissionFactorQuery): Promise<number | null> {
-    const andParts: Record<string, unknown>[] = [];
-    const add = (key: keyof EmissionFactorQuery, value?: string) => {
-      if (value) {
-        andParts.push({ [key]: this.ciRegex(value) });
-      }
-    };
+    const queryKeys: (keyof EmissionFactorQuery)[] = [
+      'type',
+      'category',
+      'fuel',
+      'material',
+      'sub_type',
+      'vehicle_group',
+      'vehicle',
+      'propulsion',
+    ];
 
-    add('type', query.type);
-    add('category', query.category);
-    add('fuel', query.fuel);
-    add('material', query.material);
-    add('sub_type', query.sub_type);
-    add('vehicle_group', query.vehicle_group);
-    add('vehicle', query.vehicle);
-    add('propulsion', query.propulsion);
+    const baseQuery = Object.fromEntries(
+      queryKeys
+        .filter((key) => query[key])
+        .map((key) => [key, this.ciRegex(query[key] as string)]),
+    ) as Record<string, unknown>;
 
-    let dbQuery: Record<string, unknown> = {};
+    let dbQuery: Record<string, unknown> | null = null;
 
+    // Some data have different spelling of litres
     if (query.unit) {
       const unitAlts = [query.unit];
       if (query.unit.toLowerCase() === 'litres') unitAlts.push('liters');
@@ -93,17 +94,18 @@ export class EmissionMongooseRepository implements EmissionRepositoryPort {
         unit: this.ciRegex(unit),
       }));
 
-      dbQuery = andParts.length
-        ? { $and: [...andParts, { $or: unitOr }] }
+      dbQuery = Object.keys(baseQuery).length
+        ? { $and: [baseQuery, { $or: unitOr }] }
         : { $or: unitOr };
-    } else if (andParts.length) {
-      dbQuery = { $and: andParts };
+    } else if (Object.keys(baseQuery).length) {
+      dbQuery = baseQuery;
     }
 
-    if (Object.keys(dbQuery).length === 0) {
+    if (!dbQuery) {
       return null;
     }
 
+    // Getting factor
     const doc = await this.emissionRatingModel
       .findOne(dbQuery, { _id: 0, kg_co2e: 1 })
       .lean();
