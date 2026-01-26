@@ -1,0 +1,50 @@
+category,fuel,unit,kg_co2e,type
+Biofuel,Bioethanol,litres,0.00901,bioenergy
+Biofuel,Bioethanol,GJ,0.42339,bioenergy
+Biofuel,Bioethanol,kg,0.01135,bioenergy
+Biofuel,Biodiesel ME,litres,0.16751,bioenergy
+Biofuel,Biodiesel ME,GJ,5.05961,bioenergy
+Biofuel,Biodiesel ME,kg,0.18822,bioenergy
+Biofuel,Biomethane (compressed),GJ,0.10625,bioenergy
+Biofuel,Biomethane (compressed),kg,0.00521,bioenergy
+Biofuel,Biodiesel ME (from used cooking oil),litres,0.16751,bioenergy
+Biofuel,Biodiesel ME (from used cooking oil),GJ,5.05961,bioenergy
+Biofuel,Biodiesel ME (from used cooking oil),kg,0.18822,bioenergy
+Biofuel,Biodiesel ME (from tallow),litres,0.16751,bioenergy
+Biofuel,Biodiesel ME (from tallow),GJ,5.05961,bioenergy
+Biofuel,Biodiesel ME (from tallow),kg,0.18822,bioenergy
+Biofuel,Biodiesel HVO,litres,0.03558,bioenergy
+Biofuel,Biodiesel HVO,GJ,1.03677,bioenergy
+Biofuel,Biodiesel HVO,kg,0.04562,bioenergy
+Biofuel,Biopropane,litres,0.00214,bioenergy
+Biofuel,Biopropane,GJ,0.08952,bioenergy
+Biofuel,Biopropane,kg,0.00415,bioenergy
+Biofuel,Development diesel,litres,0.03703,bioenergy
+Biofuel,Development diesel,GJ,1.03677,bioenergy
+Biofuel,Development diesel,kg,0.04462,bioenergy
+Biofuel,Development petrol,litres,0.01405,bioenergy
+Biofuel,Development petrol,GJ,0.42339,bioenergy
+Biofuel,Development petrol,kg,0.01889,bioenergy
+Biofuel,Off road biodiesel,litres,0.16751,bioenergy
+Biofuel,Off road biodiesel,GJ,5.05961,bioenergy
+Biofuel,Off road biodiesel,kg,0.18822,bioenergy
+Biofuel,Biomethane (liquified),GJ,0.10901,bioenergy
+Biofuel,Biomethane (liquified),kg,0.00534,bioenergy
+Biofuel,Methanol (bio),litres,0.00669,bioenergy
+Biofuel,Methanol (bio),GJ,0.42339,bioenergy
+Biofuel,Methanol (bio),kg,0.00844,bioenergy
+Biofuel,Avtur (renewable),litres,0.02536,bioenergy
+Biofuel,Avtur (renewable),GJ,0.7234,bioenergy
+Biofuel,Avtur (renewable),kg,0.03178,bioenergy
+Biomass,Wood logs,tonnes,43.89327,bioenergy
+Biomass,Wood logs,kWh,0.01074,bioenergy
+Biomass,Wood chips,tonnes,40.58114,bioenergy
+Biomass,Wood chips,kWh,0.01074,bioenergy
+Biomass,Wood pellets,tonnes,51.56192,bioenergy
+Biomass,Wood pellets,kWh,0.01074,bioenergy
+Biomass,Grass/straw,tonnes,57.63342,bioenergy
+Biomass,Grass/straw,kWh,0.0155,bioenergy
+Biogas,Biogas,tonnes,1.23595,bioenergy
+Biogas,Biogas,kWh,0.00022,bioenergy
+Biogas,Landfill gas,tonnes,0.69479,bioenergy
+Biogas,Landfill gas,kWh,0.0002,bioenergy
