@@ -1,0 +1,42 @@
+$mobile-breakpoint: 768px;
+
+:host {
+  display: grid;
+  width: 100%;
+  height: 100vh;
+  min-height: 600px;
+  min-width: 900px;
+  grid-template-rows: 100px 1fr;
+  grid-template-columns: 260px 1fr;
+  grid-template-areas:
+    'sd hd hd hd '
+    'sd main main main'
+    'sd main main main'
+    'sd main main main '
+    'sd main main main';
+
+  @media (max-width: $mobile-breakpoint) {
+    grid-template-columns: 80px 1fr;
+    grid-template-areas:
+    'sd hd hd hd'
+    'sd main main main'
+    'sd main main main'
+    'sd main main main'
+    'sd main main main';
+  }
+
+  esg-header-container {
+    grid-area: hd;
+  }
+
+  esg-side-navbar-container {
+    grid-area: sd;
+  }
+
+  .content {
+    grid-area: main;
+    background: #f2f2f2;
+    height: 100%;
+    overflow-y: auto;
+  }
+}

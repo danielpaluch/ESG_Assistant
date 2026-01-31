@@ -1,0 +1,10 @@
+<div class="nav-container">
+  @for (navItem of navItems(); track navItem) {
+    <span class="nav-item">
+      <a [routerLink]="navItem.url" routerLinkActive="active">
+        <mat-icon>{{ navItem.icon }}</mat-icon>
+        <span class="nav-title">{{ navItem.label }}</span>
+      </a>
+    </span>
+  }
+</div>

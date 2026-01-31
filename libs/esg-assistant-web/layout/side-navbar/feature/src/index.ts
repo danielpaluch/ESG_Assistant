@@ -1,0 +1,1 @@
+export * from './lib/containers/side-navbar-container/side-navbar-container.component';

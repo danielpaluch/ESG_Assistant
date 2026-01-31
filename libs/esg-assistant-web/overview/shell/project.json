@@ -1,0 +1,21 @@
+{
+  "name": "web-overview-shell",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/esg-assistant-web/overview/shell/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": [ "scope:overview","type:shell", "platform:web"],
+  "targets": {
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "libs/esg-assistant-web/overview/shell/jest.config.ts",
+        "tsConfig": "libs/esg-assistant-web/overview/shell/tsconfig.spec.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}

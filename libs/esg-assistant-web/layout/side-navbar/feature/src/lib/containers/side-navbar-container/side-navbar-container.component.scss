@@ -1,0 +1,84 @@
+$container-padding: 20px;
+
+:host {
+  height: 100%;
+  background: var(--primary, #163564);
+
+  .nav-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: $container-padding;
+    height: calc(100% - ($container-padding * 2));
+
+    @media (max-width: 900px) {
+      justify-content: start;
+    }
+
+    app-company-logo {
+      display: flex;
+    }
+
+    .nav-item {
+      width: 100%;
+      &:hover {
+        opacity: 0.7;
+      }
+      a {
+        padding: 10px $container-padding;
+        border-radius: 32px;
+        color: white;
+        text-decoration: none;
+        display: flex;
+        gap: 10px;
+        @media (max-width: 900px) {
+          justify-content: center;
+
+          padding: 10px 0;
+        }
+
+        mat-icon {
+          height: 30px;
+          width: 30px;
+          font-size: 30px;
+          color: white;
+        }
+        &.active {
+          mat-icon {
+            color: var(--secondary_accent, #08a045);
+          }
+          span {
+            color: var(--secondary_accent, #08a045);
+          }
+        }
+
+        .nav-title {
+          align-self: center;
+          @media (max-width: 900px) {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .fab-button {
+      display: flex;
+      justify-content: center;
+      color: white;
+      width: 100%;
+      margin-top: auto;
+
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
+
+    .icon-button {
+      color: white;
+      display: none;
+      @media (max-width: 900px) {
+        display: flex;
+      }
+    }
+  }
+}

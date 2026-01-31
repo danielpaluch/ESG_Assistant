@@ -93,6 +93,25 @@
       ],
       "@shared/contracts/emissions": [
         "libs/shared/contracts/emissions/src/index.ts"
+      ],
+      "@esg-assistant-web/shell": ["libs/esg-assistant-web/shell/src/index.ts"],
+      "@esg-assistant-web/overview/shell": [
+        "libs/esg-assistant-web/overview/shell/src/index.ts"
+      ],
+      "@esg-assistant-web/esg-creator/shell": [
+        "libs/esg-assistant-web/esg-creator/shell/src/index.ts"
+      ],
+      "@esg-assistant-web/layout/feature": [
+        "libs/esg-assistant-web/layout/feature/src/index.ts"
+      ],
+      "@esg-assistant-web/layout/side-navbar/feature": [
+        "libs/esg-assistant-web/layout/side-navbar/feature/src/index.ts"
+      ],
+      "@esg-assistant-web/layout/header/feature": [
+        "libs/esg-assistant-web/layout/header/feature/src/index.ts"
+      ],
+      "@esg-assistant-web/layout/side-navbar/application": [
+        "libs/esg-assistant-web/layout/side-navbar/application/src/index.ts"
       ]
     }
   }

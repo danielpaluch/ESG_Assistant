@@ -1,0 +1,11 @@
+{
+  "name": "company-contracts",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/contracts/authentication/src",
+  "projectType": "library",
+  "tags": [
+    "scope:company", "type:contracts", "platform:shared"
+  ],
+  "// targets": "to see all targets run: nx show project authentication --web",
+  "targets": {}
+}

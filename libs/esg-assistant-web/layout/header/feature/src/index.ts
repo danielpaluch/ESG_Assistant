@@ -1,0 +1,1 @@
+export * from './lib/containers/header-container/header-container.component';
