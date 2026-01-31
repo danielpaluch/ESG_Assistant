@@ -1,0 +1,9 @@
+{
+  "name": "company-api",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/esg-assistant-server/company/api/src",
+  "projectType": "library",
+  "tags": ["scope:company", "type:api", "platform:server"],
+  "// targets": "to see all targets run: nx show project api --web",
+  "targets": {}
+}

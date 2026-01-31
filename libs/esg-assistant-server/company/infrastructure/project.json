@@ -1,0 +1,9 @@
+{
+  "name": "company-infrastructure",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/esg-assistant-server/company/infrastructure/src",
+  "projectType": "library",
+  "tags": ["scope:company", "type:infrastructure", "platform:server"],
+  "// targets": "to see all targets run: nx show project api --web",
+  "targets": {}
+}
